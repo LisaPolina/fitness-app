@@ -1,29 +1,36 @@
 {
-  "name": "fitness-app",
-  "version": "1.0.0",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+  "name": "fitness-client-app",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "10.10.0"
   },
-  "keywords": [
-    "Express",
-    "RestAPI",
-    "MongoDB",
-    "Mongoose",
-    "Notes"
-  ],
-  "author": "callicoder",
-  "license": "MIT",
   "dependencies": {
-    "bcrypt": "*",
-    "body-parser": "^1.18.3",
-    "cookie-parser": "*",
-    "cors": "*",
-    "express": "^4.16.3",
+    "js-cookie": "^2.2.0",
     "lodash": "^4.17.11",
-    "mongoose": "^5.2.8",
-    "path": "^0.12.7",
-    "uniqid": "*"
+    "moment": "^2.24.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8"
+  },
+  "proxy": "http://localhost:5000",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "eslint": "^5.16.0"
   }
 }
