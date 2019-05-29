@@ -27,7 +27,7 @@ class IndexPage extends Component {
             let weekDays = [];
             let day = moment(monthStart);
 
-            const startDate = moment(new Date()).startOf('week');
+            const startDate = moment(new Date()).startOf('month');
             for (let i = 0; i < 7; i++) {
                 weekDays.push(
                     <li key={i}>
