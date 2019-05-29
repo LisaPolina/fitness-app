@@ -9,4 +9,4 @@ module.exports = (app) => {
     app.post('/api/meals/:mealId', user.authWrapper(meals.update));
     app.delete('/api/meals/:mealId', user.authWrapper(meals.delete));
     app.delete('/api/meals', user.authWrapper(meals.deleteAll));
-}
+};

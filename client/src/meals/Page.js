@@ -64,9 +64,7 @@ class MealsPage extends Component {
     }
 
     componentDidMount() {
-        if (this.props.isAuthorized) {
-            this.reloadMeals();
-        }
+        this.reloadMeals();
     }
 
     showEditorForMealHandler(ind) {

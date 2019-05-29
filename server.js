@@ -50,6 +50,7 @@ app.get('/api/testroute', (req, res) => {
 
 require('./app/routes/user.routes.js')(app);
 require('./app/routes/meal.routes.js')(app);
+require('./app/routes/day.routes.js')(app);
 
 if (isOnHeroku) {
     // Anything that doesn't match the above, send back index.html
