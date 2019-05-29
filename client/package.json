@@ -2,6 +2,9 @@
   "name": "fitness-client-app",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "10.10.0"
+  },
   "dependencies": {
     "js-cookie": "^2.2.0",
     "lodash": "^4.17.11",
@@ -28,6 +31,5 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "eslint": "^5.16.0"
   }
 }
