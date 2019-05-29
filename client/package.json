@@ -31,5 +31,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "eslint": "5.12.0"
   }
 }
