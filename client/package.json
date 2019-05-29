@@ -1,6 +1,6 @@
 {
   "name": "fitness-client-app",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "private": true,
   "engines": {
     "node": "10.10.0"
@@ -31,6 +31,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "eslint": "5.12.0"
+    "eslint": "^5.12.0"
   }
 }
