@@ -1,8 +1,8 @@
 const BL_URL = '/api/';
 
 export default {
-   edit: function (id, data) {
-      const requestUrl = BL_URL + 'days/' + id;
+   edit: function (data) {
+      const requestUrl = BL_URL + 'days/' + data.date;
 
       const requestOptions = {
          method: 'POST',
@@ -44,9 +44,13 @@ export default {
 
         return new Promise((resolve, reject) => {
             fetch(requestUrl, requestOptions)
-                .then(res => res.json())
                 .then(res => {
-                    resolve(res);
+                    if (res.ok) {
+                        res = res.json();
+                        resolve(res);
+                    } else {
+                        reject(res);
+                    }
                 })
                 .catch(err => {
                     reject(err);
