@@ -22,7 +22,7 @@
     "cors": "*",
     "express": "^4.16.3",
     "lodash": "^4.17.11",
-    "mongoose": "^5.2.8",
+    "mongoose": "^5.7.5",
     "path": "^0.12.7",
     "uniqid": "*"
   }
